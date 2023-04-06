@@ -1,0 +1,4 @@
+## 코드 수정하고 커밋하기
+> git add .   // 코드 올리기
+> git commit -m "히스토리 이름"    // 커밋하기
+> git push orgin master  // 보내기
