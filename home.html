@@ -1,51 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home - My first website</title>
-    <meta name="description" content="This is my webpage">
-</head>
-<body>
-    <h1>Create An Account</h1>
-    <div></div>
-    <form>
-        <div>
-            <label for="First name">First name</label>
-            <input id="First name" required placeholder="First name" type = "text">
-        </div>
-        <div>
-            <label for="Last name">Last name</label>
-            <input required id="Last name" required placeholder="Last name" type = "text">
-        </div>
-        <div>
-            <label for="Email">Email</label>
-            <input id="Email" required placeholder="Email" type = "email">
-        </div>
-        <div>
-            <label for="Username">Username</label>
-            <input id="Username" required placeholder="Username" type = "text">
-        </div>
-        <div>
-            <label for="password">password</label>
-            <input id="password" required minlength ="10" placeholder="password" type = "password">
-        </div>
-        <div>
-            <label for="Birthday date">Birthday date</label>
-            <input id="Birthday date" required type = "date">
-        </div>
-        <div>
-            <label for="Happy">How Happy are you?</label>
-            <input id="Happy" required type = "range">
-        </div>
-        <div>
-            <label for="Color">What is your fav.color?</label>
-            <input id="Color" required type = "color">
-        </div>
-        <div>
-            <input type="submit" value="Create Account">
-        </div>
-    </form>
+<html>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+
+    body {
+      background-color: cadetblue;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    @keyframes move {
+      from {
+        transform: rotate(0);
+      }
+      to {
+        transform: rotate(180deg);
+      }
+      
+    }
+    .up {
+      display: flex;
+      justify-content: center;
+      animation: move 1s ease-in-out infinite;
+      animation-delay: 1s;
+    }
+    .circle {
+      background-color: white;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin: 70px 20px;
+
+    }
+    @keyframes movea {
+      10% { transform:scaleY(2);}  }
+    @keyframes moveb {
+      30% { transform:scaleY(2);}  } 
+    @keyframes movec {
+      50% { transform:scaleY(2);}  }
+    @keyframes moved {
+      70% { transform:scaleY(2);}  }
+    @keyframes movee {
+      90% { transform:scaleY(2);}  }
+      
+    .down {
+      display: flex;
+      justify-content: center;
+    }
+    .rythem {
+      width: 15px;
+      height: 80px;
+      margin: 70px 5px;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+    }
+    .rythem.a {
+      animation: movea 1s ease-out infinite ;
+    }
+    .rythem.b {
+      animation: moveb 1s ease-out infinite ;
+    }
+    .rythem.c {
+      animation: movec 1s ease-out infinite ;
+    }
+    .rythem.d {
+      animation: moved 1s ease-out infinite ;
+    }
+    .rythem.e {
+      animation: movee 1s ease-out infinite ;
+    }
+
+  </style>
+</head>
+
+  <body>
+    
+  <div class="up" >
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+
+  <div class="down">
+    <div class="rythem a"></div>
+    <div class="rythem b"></div>
+    <div class="rythem c"></div>
+    <div class="rythem d"></div>
+    <div class="rythem e"></div>
+  </div>
 
 </body>
+
 </html>
