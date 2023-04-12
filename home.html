@@ -4,99 +4,80 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>Day8</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <style>
-
-    body {
-      background-color: cadetblue;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    @keyframes move {
-      from {
-        transform: rotate(0);
-      }
-      to {
-        transform: rotate(180deg);
-      }
-      
-    }
-    .up {
-      display: flex;
-      justify-content: center;
-      animation: move 1s ease-in-out infinite;
-      animation-delay: 1s;
-    }
-    .circle {
-      background-color: white;
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      margin: 70px 20px;
-
-    }
-    @keyframes movea {
-      10% { transform:scaleY(2);}  }
-    @keyframes moveb {
-      30% { transform:scaleY(2);}  } 
-    @keyframes movec {
-      50% { transform:scaleY(2);}  }
-    @keyframes moved {
-      70% { transform:scaleY(2);}  }
-    @keyframes movee {
-      90% { transform:scaleY(2);}  }
-      
-    .down {
-      display: flex;
-      justify-content: center;
-    }
-    .rythem {
-      width: 15px;
-      height: 80px;
-      margin: 70px 5px;
-      background-color: white;
-      display: flex;
-      justify-content: center;
-    }
-    .rythem.a {
-      animation: movea 1s ease-out infinite ;
-    }
-    .rythem.b {
-      animation: moveb 1s ease-out infinite ;
-    }
-    .rythem.c {
-      animation: movec 1s ease-out infinite ;
-    }
-    .rythem.d {
-      animation: moved 1s ease-out infinite ;
-    }
-    .rythem.e {
-      animation: movee 1s ease-out infinite ;
-    }
-
-  </style>
+  
 </head>
 
-  <body>
-    
-  <div class="up" >
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
+<body>
+  
+  <div class="status-bar">
+    <div class="status-bar__left">
+      <i class="fas fa-times"></i></div>
+    <div class="status-bar__middle">
+      <span>Playlist</span></div>
   </div>
 
-  <div class="down">
-    <div class="rythem a"></div>
-    <div class="rythem b"></div>
-    <div class="rythem c"></div>
-    <div class="rythem d"></div>
-    <div class="rythem e"></div>
+
+  <div class="play_now">
+    <div class="play_now__album"></div>
+    <div class="play_now__song">
+      <div class="play_now__songname">Random Love</div>
+      <div>by divay kapoor</div>
+    </div>
   </div>
 
+
+  <div class="middle-icons">
+    <div class="middle-icons__rectangle">
+    <div class="middle-icons__rectangle-inside">
+      <i class="fas fa-play"></i>
+      <span>play</span>
+    </div>
+    </div>
+    <div class="middle-icons__circle">
+      <i class="far fa-heart"></i>
+    </div>
+    <div class="middle-icons__circle">
+      <i class="far fa-plus"></i>
+    </div>
+  </div>
+
+
+  <div class="playlist">
+    <section>
+      <article class="playlist__list">
+        <div class="playlist__album"></div>
+        <div class="playlist__song">
+          <div class="playlist__songname">Matargasti</div>
+          <div>Mohit Chauhan</div>
+        </div>
+      </article>
+      <article class="playlist__list">
+        <div class="playlist__album"></div>
+        <div class="playlist__song">
+          <div class="playlist__songname">Attitude</div>
+          <div>Lewis Ofman-Attitude</div>
+        </div>
+      </article>
+      <article class="playlist__list">
+        <div class="playlist__album"></div>
+        <div class="playlist__song">
+          <div class="playlist__songname">Try Everything</div>
+          <div>Shakira-Zootopia</div>
+        </div>
+      </article>
+      <article class="playlist__list">
+        <div class="playlist__album"></div>
+        <div class="playlist__song">
+          <div class="playlist__songname">Sunflower</div>
+          <div>Joseph Vincent-Sunflower</div>
+        </div>
+      </article>
+    </section>
+  </div>
+
+  <script src="https://kit.fontawesome.com/9e2e42fa31.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

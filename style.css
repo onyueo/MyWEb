@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600;800&display=swap');
+
+body {
+    border: 5px solid forestgreen;
+    padding: 0px 20px;
+    width: 300px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.status-bar {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: large;
+    display: flex;
+}
+.status-bar__middle {
+    margin: 0px 33%;
+}
+
+.play_now {
+    display: flex;
+    font-weight: 600;
+    font-size: small;
+}
+.play_now__album {
+    border: 2px solid black;
+    border-radius: 20%;
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    margin: 30px 0px;
+}
+.play_now__song {
+   margin: 50px 10px;
+}
+.play_now__songname {
+    font-weight: 800;
+    font-size:x-large;
+}
+
+
+.middle-icons {
+    display: flex;
+    justify-content:space-around;
+}
+.middle-icons__rectangle {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100px;
+    padding: 10px;
+    border-bottom-width: 5px;
+}
+.middle-icons__circle {
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-bottom-width: 5px;
+}
+.middle-icons__rectangle-inside  {
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+}
+div i {
+    font-size: larger;
+}
+i ~ span {
+    margin-left: 10px;
+}
+
+
+.playlist__list {
+    display: flex;
+    margin: 30px 0px;
+    font-weight: 200;
+    font-size: small;
+}
+
+.playlist .playlist__album {
+    border: 1px solid black;
+    border-radius: 20%;
+    width: 50px;
+    height: 50px;
+}
+.playlist__songname {
+    font-weight: 800;
+    font-size: large;
+    margin-top: 5px;
+}
+.playlist__list:nth-child(1) .playlist__album {
+    background-color: tomato;
+}
+.playlist__list:nth-child(2) .playlist__album {
+    background-color: palevioletred;
+}
+.playlist__list:nth-child(3) .playlist__album {
+    background-color: blue;
+}
+.playlist__list:nth-child(4) .playlist__album {
+    background-color: teal;
+}
+.playlist__song {
+    margin-left: 10px;
+}
