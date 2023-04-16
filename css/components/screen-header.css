@@ -1,0 +1,25 @@
+.screen-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: var(--horizontal-space);
+    margin-bottom: 10px;
+}
+.screen-header__title {
+    font-size: 30px;
+    font-weight: 600;
+}
+.screen-header i {
+    margin-left: 20px;
+}
+.screen-header__icons:last-child {
+    display: flex;
+    position: relative;
+}
+.screen-header__noti {
+    position: absolute;
+    bottom: 20px;
+    left: 80px;
+}
+
