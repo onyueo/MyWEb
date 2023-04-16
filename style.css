@@ -1,138 +1,189 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500&family=Rubik:wght@300;400;500;700&display=swap');
+/* 
+font-family: 'DynaPuff', cursive;
+font-family: 'Rubik', sans-serif; 
+*/
 
 body {
-    font-family: 'Roboto Slab', serif;
-    width: 400px;
+    display: flex;
+    background: linear-gradient(90deg, #70d53d, #faf082);
+    font-family: 'Rubik', sans-serif;
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
+.box {
+    width: 250px;
+    height: 550px;
+    margin: 50px 30px;
+    padding: 5px 0px;
+    background-color: rgb(237, 240, 242);
+    border-radius: 20px;
+    
 }
 .head-bar {
     display: flex;
     justify-content: space-between;
-    padding: 20px 5px 50px 5px;
-    background-color: #f2b636;
+    position: relative;
+    margin: 20px;
 }
-.search-book {
+
+
+.playlist__top {
     display: flex;
-    justify-content: space-between;
-    margin: -15px 5px;
-    padding: 10px 30px;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 5px 10px -4px rgba(0, 0, 0, 0.323);
+    flex-direction: column;
+    align-items: center;
 }
-.search-book input {
-    border: none;
-    color: #d6d6d6;
+.playlist__top img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
 }
-.search-book ::placeholder {
-    color: #b5b4b4;
-}
-
-.li {
-    font-size: larger;
-    font-weight: 600;
-    margin: 30px 0px 20px 0px;
-}
-
-.intro-book {
-    margin: 0px 20px;
-    font-size: medium;
+.playlist__top__artist {
+    font-family: 'DynaPuff', cursive;
     font-weight: 500;
+    font-size: 25px;
+    margin: 10px;
+}
+.playlist__top__them {
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    color: rgba(0, 0, 0, 0.445);
 }
 
-.bookofday__main {
-    display: flex;
-}
-.bookofday__book {
-    background-color: lightblue;
-    width: 200px;
-    border-radius: 10px;
-    margin: 0px 20px 0px 0px;
-}
-.bookofday .author {
-    font-size: small;
-    font-weight: 200;
-    color: #b5b4b4;
-    margin: -10px 0px 10px 0px;
-}
-.bookofday__tag {
-    display: flex;
-}
-.bookofday__tag p {
-    background-color: #b5b4b42c;
-    padding: 7px 15px;
-    border-radius: 10px;
-    margin: 10px 10px;
-    font-size: 15px;
-    margin-left: auto;
-}
-.bookofday__mark {
+.playlist__mid {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
-
-.bookofday__bookmark {
-    width: 30px;
-    height: 30px;
-    background-color: #f2b636;
-    border-radius: 50%;
-    margin-right: 30px;
-}
-.bookofday__bookmark i {
-    margin: 9px 9px;
-}
-.bookofday__booknow {
-    margin-left: auto;
-    background-color: #393737;
-    padding: 7px 30px;
-    border-radius: 10px;
-    text-align: center;
-    color: white;
-    font-size: 13px;
-    font-weight: 200;
-
-}
-
-
-.topof__books {
-    background-color: lightblue;
+.playlist__mid div {
     width: 80px;
-    height: 120px;
-    border-radius: 10px;
-    margin: 0px 20px 0px 0px;
+    height: 30px;
+    border-radius: 20px;
+    margin: 20px 10px;
+    padding: 0px 10px;
+    font-size: 11px;
     
 }
-.topof__list {
+.playlist__shuffle {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+}
+.playlist__like {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(233, 235, 236);
 }
 
-.popauthors__intro {
+.playlist__song {
     display: flex;
+    flex-direction: row;
+    padding: 10px 10px;
+    margin: 0px 10px;
+    align-items: center;
+    justify-content: space-between;
 }
-.popauthors__book {
-    background-color: lightblue;
-    width: 30%;
-    height: 120;
+.playlist__song__front {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.playlist__song img {
+    width: 40px;
+    height: 40px;
     border-radius: 10px;
 }
-.popauthors__article {
+
+.playlist__songinfoartist {
+    font-size: 10px;
+    margin: 2px 10px;
+}
+.playlist__songinfoname {
+    font-size: 15px;
+    font-family: 'DynaPuff', cursive;
+    margin: 2px 10px;
+}
+.playlist__song i {
+    color: rgba(0, 0, 0, 0.415);
+}
+.now {
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.playlist__btm {
+    background-color: rgb(12, 12, 12);
+    /* width: 200px;
+    height: 20px; */
+    padding: 5px 20px;
+    margin: 3px 10px;
+    border-radius: 40px;
+    color: aliceblue;
     display: flex;
-    flex-wrap: wrap;
-    width: 70%;
-    margin-left: 20px;    
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
-.popauthors__author {
-    font-weight: 500;
-    font-size: larger;
+.playlist__btm__name {
+    font-size: 10px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.484);
 }
-.popauthors__exp {
-    font-weight: 200;
-    font-size: small;
-    color: #b5b4b4;
+.playlist__btm__song {
+    font-size: 15px;
+    margin: 0;
+
+    font-family: 'DynaPuff', cursive;
+
+}
+.playlist__btm__icon i{
+    padding: 10px;
+}
+
+
+.playnow__album img{
+    margin: 10px 30px;
+    width: 190px;
+    height: 190px;
+    border-radius: 20px;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, rgba(0,0,0,0), rgba(0,0,0,0.3));
+
+}
+.playnow__mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    margin: 10px;
+}
+.playnow__song {
+    font-family: 'DynaPuff', cu
+    rsive;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 5px;
+}
+.playnow__name {
+    font-family: 'Rubik', sans-serif;
+    color: rgba(0, 0, 0, 0.445);
+    font-size: 12px;
+    margin: 5px;
+}
+
+.playnow_timebar {
+    margin: 0px 15px;  
+}
+.playnow__time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.445);
+}
+.playnow__bar {
+    width: 100%;
+    accent-color: black;
+    height: 5px;
 }
